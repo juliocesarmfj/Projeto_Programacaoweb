@@ -28,3 +28,9 @@
       document.getElementById('total-produto04').innerText = totalProduto04.toFixed(2);
       document.getElementById('total-produto05').innerText = totalProduto05.toFixed(2);
     }
+
+    function CalcularValor(){
+
+        var ValorTotal = totalProduto01 + totalProduto02 + totalProduto03 + totalProduto04 + totalProduto05;
+        
+    }
