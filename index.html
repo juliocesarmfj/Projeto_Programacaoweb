@@ -7,41 +7,54 @@
   <h1>Sistema de Orçamentação</h1>
 
   <form>
-    <label for="nome">Nome:</label>
-    <input type="text" id="nome" name="nome"><br>
 
-    <label for="email">E-mail:</label>
-    <input type="email" id="email" name="email"><br>
-
+    <form>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome"><br><br>
+    
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email"><br><br>
+   
     <table>
       <tr>
-        <th>Nome do Produto 01</th>
-        <th>Nome do Produto 02</th>
-        <th>Nome do Produto 03</th>
-        <th>Nome do Produto 04</th>
+        <th>Cd do Chitaozinho e Xororó</th>
+        <th>Havainas da Akali</th>
+        <th>Pc gamer da Barbie</th>
+        <th></th>
         <th>Nome do Produto 05</th>
       </tr>
       <tr>
-        <td>R$ xxx (unidade)</td>
-        <td>R$ xxx (unidade)</td>
-        <td>R$ xxx (unidade)</td>
-        <td>R$ xxx (unidade)</td>
-        <td>R$ xxx (unidade)</td>
+        
+        <th><img src="https://m.media-amazon.com/images/I/61ENR1E2CgL._AC_SX425_.jpg" alt="Produto 1" width="170" height="170"></th>
+        <th><img src="https://havaianas.com.br/dw/image/v2/BDDJ_PRD/on/demandware.static/-/Sites-havaianas-master/default/dw5b087091/product-images/4148151_9194_SANDALIA-HAVAIANAS-TOP-LO-LEGENDS_A.png?sw=680&sh=680" alt="Produto 2" width="170" height="170"></th>
+        <th><img src="https://www.checkers.co.za/medias/10753300EA-add-checkers515Wx515H?context=bWFzdGVyfGltYWdlc3wyMTIwNjB8aW1hZ2UvcG5nfGltYWdlcy9oZGEvaGZmLzk4OTcxMDgzNDA3NjYucG5nfGIyNDE1ZjkyNzY5NWYzNWZhZTU4ZWE4Njc3NDc3NmM2ZGMzNTBhYmY5MjFlYTdiMzBlMGI4OWZlNTUyM2MxYTA" alt="Produto 3" width="170" height="170"></th>
+        </th>
       </tr>
       <tr>
-        <td><input type="number" id="quantidade-produto01" name="quantidade-produto01"></td>
-        <td><input type="number" id="quantidade-produto02" name="quantidade-produto02"></td>
-        <td><input type="number" id="quantidade-produto03" name="quantidade-produto03"></td>
-        <td><input type="number" id="quantidade-produto04" name="quantidade-produto04"></td>
-        <td><input type="number" id="quantidade-produto05" name="quantidade-produto05"></td>
+        <td id="preco-produto01">10.00</td>
+        <td id="preco-produto02">15.00</td>
+        <td id="preco-produto03">20.00</td>
+        <td id="preco-produto04">12.50</td>
+        <td id="preco-produto05">8.00</td>
+      </tr>
+      <tr>
+        <td><input type="number" id="quantidade-produto01" name="quantidade-produto01" onchange="calcularTotal()"></td>
+        <td><input type="number" id="quantidade-produto02" name="quantidade-produto02" onchange="calcularTotal()"></td>
+        <td><input type="number" id="quantidade-produto03" name="quantidade-produto03" onchange="calcularTotal()"></td>
+        <td><input type="number" id="quantidade-produto04" name="quantidade-produto04" onchange="calcularTotal()"></td>
+        <td><input type="number" id="quantidade-produto05" name="quantidade-produto05" onchange="calcularTotal()"></td>
+      </tr>
+      <tr>
+        <td id="total-produto01"></td>
+        <td id="total-produto02"></td>
+        <td id="total-produto03"></td>
+        <td id="total-produto04"></td>
+        <td id="total-produto05"></td>
       </tr>
     </table>
 
-    <br>
-
-    <input type="submit" value="Calcular">
-
   </form>
+  <script src="index.js"></script>
 
 </body>
 </html>
